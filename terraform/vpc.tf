@@ -1,9 +1,8 @@
-resource "aws_vpc" "my_vpc" {
+resource "aws_vpc" "NEW" {
   cidr_block = var.vpc_cidr_block
-  enable_dns_support = true
-  enable_dns_hostnames = true
+  instance_tenancy = "default"
 
   tags = {
-    Name = "My VPC"
+    Name = "NEW"
   }
 }
