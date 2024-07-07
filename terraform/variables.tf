@@ -179,7 +179,7 @@ variable "imds_support" {
 
 variable "ebs_snapshot_id" {
   type = string
-  description = "snap-087f5a4ba5a0f2cf4"
+  description = "snap-052e09c33c09cb7e3"
 }
 
 variable "ebs_volume_size" {
