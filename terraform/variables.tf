@@ -26,19 +26,26 @@ variable "instance_type" {
 #VPC AND SUBNET
 variable "vpc_cidr_block" {
   type = string
-  description = "CIDR block for the VPC"
   default = "10.0.0.0/16"
+  description = "CIDR block for the VPC"
 }
 
-variable "public_subnet_cidr" {
+variable "public_subnet_cidr_block" {
   type = string
-  description = "CIDR block for the public subnet"
   default = "10.0.1.0/24"
+  description = "CIDR block for the Public Subnet"
+}
+
+variable "private_subnet_cidr_block" {
+  type = string
+  default = "10.0.4.0/24"
+  description = "CIDR block for the Private Subnet"
 }
 
 variable "availability_zone" {
   type = string
-  description = "us-east-1a"
+  default = "us-east-1a"
+  description = "Availability Zone for the subnets"
 }
 
 #s3 bucket
