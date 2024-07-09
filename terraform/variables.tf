@@ -177,11 +177,6 @@ variable "imds_support" {
   default = "v2.0"
 }
 
-variable "ebs_snapshot_id" {
-  type = string
-  description = "snap-052e09c33c09cb7e3"
-}
-
 variable "ebs_volume_size" {
   type = number
   description = "The size (in GiB) of the EBS volume to create for the AMI."
