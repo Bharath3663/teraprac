@@ -1,4 +1,4 @@
-resource "aws_ebs_snapshot" "example_snapshot" {
+resource "aws_ebs_snapshot" "ebs_snapshot" {
   volume_id = aws_ebs_volume.ebs_volume.id
 
   tags = {
