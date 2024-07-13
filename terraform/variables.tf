@@ -182,3 +182,9 @@ variable "ebs_volume_size" {
   description = "The size (in GiB) of the EBS volume to create for the AMI."
   default = 10
 }
+
+#cloudwatch
+variable "log_group_name" {
+  type = string
+  description = "my-log"
+}
